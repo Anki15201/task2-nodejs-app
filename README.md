@@ -114,7 +114,7 @@ Pipeline Screenshot
 ![ipeline](./screenshots/pipeline.png)
 
 DockerHub Screenshot
-![Docker Hub](./screenshots/docker-hub.png)
+![cker Hub](./screenshots/docker-hub.png)
 
 Application Screenshot
 ![Application](./screenshots/running-application.png)
