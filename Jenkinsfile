@@ -61,12 +61,25 @@ pipeline {
                 }
             }
         }
-        stage("Deploy"){
-            steps{
-                echo "Deploying the Application"
-                sh "docker run -d -p 3000:3000 ${IMAGE_NAME}:${params.IMAGE_TAG}"
-                }
-            }
+        stage("Deploy") {
+    steps {
+        script {
+            echo "Deploying the Application..."
+
+            // Stop old container if exists
+            sh '''
+                if [ "$(docker ps -aq -f name=nodejs-app)" ]; then
+                  docker stop nodejs-app || true
+                  docker rm nodejs-app || true
+                fi
+            '''
+
+            // Run new container
+            sh "docker run -d --name nodejs-app -p 3000:3000 ${IMAGE_NAME}:${params.IMAGE_TAG}"
+            echo "Application deployed successfully at http://<jenkins-server-ip>:3000"
+        }
+    }
+}
         
     }
 }
