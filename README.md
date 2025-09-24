@@ -4,6 +4,20 @@ This project demonstrates a **CI/CD pipeline using Jenkins** for a NodeJS applic
 
 ---
 
+## **Folder Structure**
+project-root/
+├─ src/
+│ └─ index.js
+├─ views/
+│ └─ index.ejs
+├─ screenshots/
+│ ├─ jenkins_pipeline.png
+│ └─ dockerhub.png
+├─ Dockerfile
+├─ Jenkinsfile
+├─ package.json
+└─ README.md
+
 ## **Project Overview**
 
 - **Application:** NodeJS (Express.js)
@@ -97,14 +111,13 @@ Docker tag: <IMAGE_TAG>
 Pushed to: DockerHub
 
 Pipeline Screenshot
-![pipeline](screenshots/pipeline.png)
-
+![Jenkins Pipeline](./screenshots/pipeline.png)
 
 DockerHub Screenshot
-![dockerhub](screenshots/docker-hub.png)
+![Docker Hub](./screenshots/docker-hub.png)
 
 Application Screenshot
-![application](screenshots/running-application.png)
+![Application](./screenshots/running-application.png)
 
 Notes
 
@@ -114,17 +127,3 @@ Ensure port 3000 is free before deployment.
 
 Make sure views folder exists if using Express res.render().
 
-Project Structure
-
-project-root/
-├─ src/
-│  └─ index.js
-├─ views/
-│  └─ index.ejs
-├─ screenshots/
-│  ├─ jenkins_pipeline.png
-│  └─ dockerhub.png
-├─ Dockerfile
-├─ Jenkinsfile
-├─ package.json
-└─ README.md
