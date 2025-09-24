@@ -17,7 +17,6 @@ project-root/
 ├─ Jenkinsfile
 ├─ package.json
 └─ README.md
----
 
 ## **Project Overview**
 
@@ -111,23 +110,14 @@ Docker tag: <IMAGE_TAG>
 
 Pushed to: DockerHub
 
-## Jenkins Pipeline Screenshot
+Pipeline Screenshot
+![Jenkins Pipeline](./screenshots/pipeline.png)
 
-<p align="center">
-  <img src="./screenshots/jenkins_pipeline.png" alt="Jenkins Pipeline Screenshot" width="600"/>
-</p>
+DockerHub Screenshot
+![Docker Hub](./screenshots/docker-hub.png)
 
-## DockerHub Screenshot
-
-<p align="center">
-  <img src="./screenshots/dockerhub.png" alt="DockerHub Screenshot" width="600"/>
-</p>
-
-## Application Screenshot
-
-<p align="center">
-  <img src="./screenshots/running-application.png" alt="Application Screenshot" width="600"/>
-</p>
+Application Screenshot
+![Application](./screenshots/running-application.png)
 
 Notes
 
@@ -136,4 +126,18 @@ Ensure dockerhubcred credentials are added in Jenkins.
 Ensure port 3000 is free before deployment.
 
 Make sure views folder exists if using Express res.render().
+
+**Folder Structure**
+project-root/
+├─ src/
+│ └─ index.js
+├─ views/
+│ └─ index.ejs
+├─ screenshots/
+│ ├─ jenkins_pipeline.png
+│ └─ dockerhub.png
+├─ Dockerfile
+├─ Jenkinsfile
+├─ package.json
+└─ README.md
 
