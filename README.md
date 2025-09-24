@@ -17,6 +17,7 @@ project-root/
 ├─ Jenkinsfile
 ├─ package.json
 └─ README.md
+---
 
 ## **Project Overview**
 
@@ -110,14 +111,23 @@ Docker tag: <IMAGE_TAG>
 
 Pushed to: DockerHub
 
-Pipeline Screenshot
-![Jenkins Pipeline](./screenshots/pipeline.png)
+## Jenkins Pipeline Screenshot
 
-DockerHub Screenshot
-![Docker Hub](./screenshots/docker-hub.png)
+<p align="center">
+  <img src="./screenshots/jenkins_pipeline.png" alt="Jenkins Pipeline Screenshot" width="600"/>
+</p>
 
-Application Screenshot
-![Application](./screenshots/running-application.png)
+## DockerHub Screenshot
+
+<p align="center">
+  <img src="./screenshots/dockerhub.png" alt="DockerHub Screenshot" width="600"/>
+</p>
+
+## Application Screenshot
+
+<p align="center">
+  <img src="./screenshots/running-application.png" alt="Application Screenshot" width="600"/>
+</p>
 
 Notes
 
