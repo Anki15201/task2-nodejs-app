@@ -111,7 +111,7 @@ Docker tag: <IMAGE_TAG>
 Pushed to: DockerHub
 
 Pipeline Screenshot
-![Jenkins Pipeline](./screenshots/pipeline.png)
+![ipeline](./screenshots/pipeline.png)
 
 DockerHub Screenshot
 ![Docker Hub](./screenshots/docker-hub.png)
