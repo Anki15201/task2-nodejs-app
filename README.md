@@ -2,21 +2,6 @@
 
 This project demonstrates a **CI/CD pipeline using Jenkins** for a NodeJS application, including building a Docker image, pushing it to DockerHub, and deploying it on a server.
 
----
-
-## **Folder Structure**
-project-root/
-├─ src/
-│ └─ index.js
-├─ views/
-│ └─ index.ejs
-├─ screenshots/
-│ ├─ jenkins_pipeline.png
-│ └─ dockerhub.png
-├─ Dockerfile
-├─ Jenkinsfile
-├─ package.json
-└─ README.md
 
 ## **Project Overview**
 
@@ -111,13 +96,13 @@ Docker tag: <IMAGE_TAG>
 Pushed to: DockerHub
 
 Pipeline Screenshot
-![ipeline](./screenshots/pipeline.png)
+![pipeline](image-2.png)
 
 DockerHub Screenshot
-![cker Hub](./screenshots/docker-hub.png)
+![dockerhub](image-3.png)
 
 Application Screenshot
-![Application](./screenshots/running-application.png)
+![application](image-4.png)
 
 Notes
 
